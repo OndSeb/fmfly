@@ -21,3 +21,8 @@ footer {
   padding: 15px;
   
 }
+.sidebar {
+	width: 30%;
+	background-color: grey;
+}
+
