@@ -1,0 +1,23 @@
+.sidebar {
+  height: auto;
+}
+nav {
+
+}
+nav h2 {
+
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+}
+nav ul li {
+
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+}
