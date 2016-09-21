@@ -1,11 +1,22 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
   background-image: url("http://static.allbackgrounds.com/bg/wood.jpg");
   background-repeat: repeat;
+  padding: 10px;
+}
+.page {
+  width: auto;
+  background-color: grey;
 }
 .sidebar {
   height: auto;
-  border: 2px solid black;
-  background-color: #63986a;
+  background-color: white;
+  float: left;
 }
 nav {
 
@@ -15,22 +26,35 @@ nav h2 {
 }
 nav ul {
   list-style-type: none;
-  padding: 0;
   width: 100%;
-  margin: 0px 0px 10% 10%;
-
 }
 nav ul li {
-
+  list-style: none;
 }
 nav ul li a {
+  color: grey;
   display: block;
   text-decoration: none;
+  font-size: 1em;
+  padding: 0.35em 1em;
+  width: 100%;
 }
-
+nav ul li a:hover, nav ul li a:focus {
+  background-color: #63986a;
+  color: white;
+}
+.content {
+  float: right;
+}
+footer {
+  clear: both;
+}
 //Grid column layout
 
-
+/* Mobilni telefony */
+[class*="col-"] {
+    width: 100%;
+}
 @media only screen and (min-width: 320px) and (max-width: 699px) {
   /* Tablety */
   .col-tb-1 {width: 8.33%;}
@@ -47,7 +71,7 @@ nav ul li a {
   .col-tb-12 {width: 100%;}
   }
 
-@media only screen and (min-width: 700px) and (max-width: 998px) {
+@media only screen and (min-width: 700px) {
   /* StolniPC */
   .col-pc-1 {width: 8.33%;}
   .col-pc-2 {width: 16.66%;}
@@ -61,8 +85,4 @@ nav ul li a {
   .col-pc-10 {width: 83.33%;}
   .col-pc-11 {width: 91.66%;}
   .col-pc-12 {width: 100%;}
-}
-  /* Mobilni telefony */
-@media only screen and (max-width: 350px) {
-  .col-mb-main {width: 100%;}
 }
