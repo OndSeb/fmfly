@@ -9,6 +9,10 @@ body {
   background-repeat: repeat;
   padding: 10px;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .page {
   width: auto;
   background-color: grey;
