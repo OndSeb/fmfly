@@ -19,9 +19,30 @@ img {
   background-color: grey;
 }
 .sidebar {
-  height: auto;
+  height: 100%;
   background-color: white;
   float: left;
+}
+.fly-button {
+  height: 40px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 10px;
+}
+.fly-button a {
+  text-decoration: none;
+  top: 50%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0.35em 1em;
+  font-size: 20px;
+}
+.fly-button a:hover {
+  color: white;
+  background-color: #9dd804;
 }
 nav {
 
@@ -44,11 +65,19 @@ nav ul li a {
   width: 100%;
 }
 nav ul li a:hover, nav ul li a:focus {
-  background-color: #63986a;
-  color: white;
+  background-color: #555;
+  color: #9dd804;
 }
 .content {
   float: right;
+  padding: 10px;
+}
+.product-list {
+  clear: both;
+}
+.product {
+  float: left;
+  margin-left: 3px;
 }
 footer {
   clear: both;
