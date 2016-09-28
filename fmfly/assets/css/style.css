@@ -12,6 +12,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  width: auto;
 }
 .page {
   width: auto;
@@ -30,7 +31,6 @@ nav h2 {
 }
 nav ul {
   list-style-type: none;
-  width: 100%;
 }
 nav ul li {
   list-style: none;
@@ -56,10 +56,10 @@ footer {
 //Grid column layout
 
 /* Mobilni telefony */
-[class*="col-"] {
-    width: 100%;
+@media only screen and (min-width: 300px) and (max-width: 425px) {
+  .col-mb {width: 100%;}
 }
-@media only screen and (min-width: 320px) and (max-width: 699px) {
+@media only screen and (min-width: 426px) and (max-width: 768px) {
   /* Tablety */
   .col-tb-1 {width: 8.33%;}
   .col-tb-2 {width: 16.66%;}
@@ -73,9 +73,9 @@ footer {
   .col-tb-10 {width: 83.33%;}
   .col-tb-11 {width: 91.66%;}
   .col-tb-12 {width: 100%;}
-  }
+}
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
   /* StolniPC */
   .col-pc-1 {width: 8.33%;}
   .col-pc-2 {width: 16.66%;}
